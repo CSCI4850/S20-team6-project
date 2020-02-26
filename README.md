@@ -7,3 +7,5 @@
 4. Michael McComas
 5. Ramin Daneshi
 6. Brandon Swenson
+
+This repository contains the work for cracking Steganography algorithm for the Spring 2020 Neural Networks class. 
