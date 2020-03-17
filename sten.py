@@ -84,5 +84,6 @@ s = Sten()
 hidden_img = s.encode("cover.jpg", "hidden.jpg")
 decoded_img = s.decode(hidden_img)
 
-print(s.encode("cover.jpg", "hidden.jpg")/255.0)
-print(decoded_img)
+# +
+#print(s.encode("cover.jpg", "hidden.jpg")/255.0)
+#print(decoded_img)
