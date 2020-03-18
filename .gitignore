@@ -7,6 +7,8 @@
 
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
+checkpoints/
+ukiyoe2photo/
 
 # IPython
 profile_default/
