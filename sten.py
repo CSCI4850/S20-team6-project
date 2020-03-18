@@ -22,10 +22,10 @@ import imageio
 
 class Sten():
 
-    def __init__(self):
+    def __init__(self, bits):
         self.HEIGHT = 256
         self.WIDTH = 256
-        self.BITS = 3
+        self.BITS = bits
 
 
     def encode(self, cover_name, hidden_name):
@@ -64,26 +64,3 @@ class Sten():
                 output_image[x][y] = [output_R, output_G, output_B]
         return output_image
 
-
-# hidden_img = encode("cover.jpg", "hidden.jpg")
-
-# decoded_img = decode(hidden_img)
-
-# plt.imshow(mpimg.imread("cover.jpg"))
-
-# plt.imshow(mpimg.imread("hidden.jpg"))
-
-# plt.imshow(hidden_img/255.0)
-
-# plt.imshow(decoded_img)
-
-# print(hidden_img/255.0)
-# print(decoded_img)
-
-s = Sten()
-hidden_img = s.encode("cover.jpg", "hidden.jpg")
-decoded_img = s.decode(hidden_img)
-
-# +
-#print(s.encode("cover.jpg", "hidden.jpg")/255.0)
-#print(decoded_img)
