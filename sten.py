@@ -39,7 +39,7 @@ class Sten():
         np.save(save_name, cover_pix)
         return cover_pix
 
-    def decode(self, output_name, save_name):
+    def decode(self, save_name, output_name):
         working_tmp = np.load(save_name)
         working = np.uint8(working_tmp)
         output_image = np.empty((self.HEIGHT, self.WIDTH, 3))

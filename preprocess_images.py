@@ -42,4 +42,3 @@ for _ in trange(NUM_FILES, desc='File', leave=True):
         decImg = st.decode("./encodedArray/{}.npy".format(i), "./decodedArray/{}.npy".format(i))
         done.append(name)
         i += 1
-print(len(done))
