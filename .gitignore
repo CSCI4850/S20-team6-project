@@ -9,6 +9,9 @@
 */.ipynb_checkpoints/*
 checkpoints/
 ukiyoe2photo/
+data/
+encodedArray/
+decodedArray/
 
 # IPython
 profile_default/
