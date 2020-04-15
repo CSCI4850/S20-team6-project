@@ -21,7 +21,7 @@ from tqdm.auto import tqdm, trange
 
 NUM_FILES = int(sys.argv[1])
 
-st = Sten(3)
+st = Sten(7)
 done = []
 
 # +
@@ -33,12 +33,15 @@ num_files_set2 = len([f for f in os.listdir(path)if os.path.isfile(os.path.join(
 # -
 
 i = 0
-for _ in trange(NUM_FILES, desc='File', leave=True):
-    set1File = random.randint(1,num_files_set1)
-    set2File = random.randint(1,num_files_set2)
-    name = str(set1File) + '.' + str(set2File)
-    if name not in done:
-        encImg = st.encode("./data/set1/{}.jpg".format(set1File), "./data/set2/{}.jpg".format(set2File), "./encodedArray/{}.npy".format(i))
-        decImg = st.decode("./encodedArray/{}.npy".format(i), "./decodedArray/{}.npy".format(i))
-        done.append(name)
-        i += 1
+
+for set1File in trange(1,11):
+    for set2File in trange(1,6):
+        
+#     set1File = random.randint(1,15)
+#     set2File = random.randint(1,5)
+        name = str(set1File) + '.' + str(set2File)
+        if name not in done:
+            encImg = st.encode("./data/set1/{}.jpg".format(set1File), "./data/set2/{}.jpg".format(set2File), "./encodedArray/{}_{}.npy".format(set2File,i))
+            decImg = st.decode("./encodedArray/{}_{}.npy".format(set2File,i), "./decodedArray/{}.npy".format(i))
+            done.append(name)
+            i += 1
