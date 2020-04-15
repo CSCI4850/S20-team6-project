@@ -1,0 +1,5 @@
+#!/bin/bash
+
+rm IEEEtran.*
+rm References.bib
+rm Stenography_GAN.aux Stenography_GAN.bbl Stenography_GAN.blg Stenography_GAN.log Stenography_GAN.pdf Stenography_GAN.tex

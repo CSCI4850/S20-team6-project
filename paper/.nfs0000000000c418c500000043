@@ -1,0 +1,100 @@
+% PACKAGES INCLUDED HERE 
+% DO NOT NEED TO CHANGE
+\documentclass[conference]{IEEEtran}
+%\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+% TITLE GOES HERE
+
+\title{Stenography GAN: Cracking Stenography with Cycle Generative Adversarial Networks}
+
+
+% AUTHOR NAMES GOES HERE
+
+\author{\IEEEauthorblockN{1\textsuperscript{st} Nibraas Khan}
+\IEEEauthorblockA{\textit{Department of Computer Science} \\
+\textit{Middle Tennessee State University}\\
+Murfreesboro, TN \\
+nak2z@mtmail.mtsu.edu}
+\and
+\IEEEauthorblockN{2\textsuperscript{nd} Ruj Haan}
+\IEEEauthorblockA{\textit{Department of Computer Science} \\
+\textit{Middle Tennessee State University}\\
+Murfreesboro, TN \\
+gm3g@mtmail.mtsu.edu}
+\and
+\IEEEauthorblockN{3\textsuperscript{rd} George Boktor}
+\IEEEauthorblockA{\textit{Department of Computer Science} \\
+\textit{Middle Tennessee State University}\\
+Murfreesboro, TN \\
+gsb3c@mtmail.mtsu.edu}
+\and
+\IEEEauthorblockN{4\textsuperscript{th} Michael McComas}
+\IEEEauthorblockA{\textit{Department of Computer Science} \\
+\textit{Middle Tennessee State University}\\
+Murfreesboro, TN \\
+mrm8m@mtmail.mtsu.edu}
+\and
+\IEEEauthorblockN{5\textsuperscript{th} Ramin Daneshi}
+\IEEEauthorblockA{\textit{Department of Computer Science} \\
+\textit{Middle Tennessee State University}\\
+Murfreesboro, TN \\
+rd3s@mtmail.mtsu.edu}
+}
+
+\maketitle
+
+% ABSTRACT 
+
+\begin{abstract}
+This document is a model and instructions for \LaTeX.
+This and the IEEEtran.cls file define the components of your paper [title, text, heads, etc.]. *CRITICAL: Do Not Use Symbols, Special Characters, Footnotes, 
+or Math in Paper Title or Abstract.
+\end{abstract}
+
+
+% KEYWORDS
+
+\begin{IEEEkeywords}
+component, formatting, style, styling, insert
+\end{IEEEkeywords}
+
+% INTRODUCTION SECTION
+\section{Introduction}
+
+Start typing here \cite{b1}.
+
+% BACKGROUND SECTION
+\section{Background}
+
+Start typing here \cite{b2}.
+
+% METHODS SECTION
+\section{Methods}
+
+Start typing here \cite{b3}.
+
+% RESULTS SECTION
+\section{Results}
+
+Start typing here \cite{b4}.
+
+% DISCUSSION SECTION
+\section{Discussion}
+
+Start typing here \cite{b5}.
+
+% REFERENCES
+% THIS IS CREATED AUTOMATICALLY
+\bibliographystyle{IEEEtran}
+\bibliography{References} % change if another name is used for References file
+
+\end{document}
