@@ -1,0 +1,172 @@
+% PACKAGES INCLUDED HERE 
+% DO NOT NEED TO CHANGE
+\documentclass[conference]{IEEEtran}
+%\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+% TITLE GOES HERE
+
+\title{Stenography GAN: Cracking Stenography with Cycle Generative Adversarial Networks}
+
+
+% AUTHOR NAMES GOES HERE
+
+\author{\IEEEauthorblockN{1\textsuperscript{st} Nibraas Khan}
+\IEEEauthorblockA{\textit{Department of Computer Science} \\
+\textit{Middle Tennessee State University}\\
+Murfreesboro, TN \\
+nak2z@mtmail.mtsu.edu}
+\and
+\IEEEauthorblockN{2\textsuperscript{nd} Ruj Haan}
+\IEEEauthorblockA{\textit{Department of Computer Science} \\
+\textit{Middle Tennessee State University}\\
+Murfreesboro, TN \\
+gm3g@mtmail.mtsu.edu}
+\and
+\IEEEauthorblockN{3\textsuperscript{rd} George Boktor}
+\IEEEauthorblockA{\textit{Department of Computer Science} \\
+\textit{Middle Tennessee State University}\\
+Murfreesboro, TN \\
+gsb3c@mtmail.mtsu.edu}
+\and
+\IEEEauthorblockN{4\textsuperscript{th} Michael McComas}
+\IEEEauthorblockA{\textit{Department of Computer Science} \\
+\textit{Middle Tennessee State University}\\
+Murfreesboro, TN \\
+mrm8m@mtmail.mtsu.edu}
+\and
+\IEEEauthorblockN{5\textsuperscript{th} Ramin Daneshi}
+\IEEEauthorblockA{\textit{Department of Computer Science} \\
+\textit{Middle Tennessee State University}\\
+Murfreesboro, TN \\
+rd3s@mtmail.mtsu.edu}
+}
+
+\maketitle
+
+% ABSTRACT 
+
+\begin{abstract}
+This document is a model and instructions for \LaTeX.
+This and the IEEEtran.cls file define the components of your paper [title, text, heads, etc.]. *CRITICAL: Do Not Use Symbols, Special Characters, Footnotes, 
+or Math in Paper Title or Abstract.
+\end{abstract}
+
+
+% KEYWORDS
+
+\begin{IEEEkeywords}
+component, formatting, style, styling, insert
+\end{IEEEkeywords}
+
+% INTRODUCTION SECTION
+\section{Introduction}
+
+Talk about the importance of cyrpto. 
+
+The sten specifically. 
+
+Sten used in real life.
+
+There have crack to crack cyrpto and steno. 
+
+We are also taking on the same task. Our approach is cycle gans. 
+
+Before that, we need to about gans in general. 
+
+History of cycle gans 
+
+Pix2Pix and CNN
+
+Why will this work/or why is this worth exploring 
+
+In order to understand its need to compare it to other models, and in this case autoencoders
+
+For maximum accruacy we also introduced. Bayesian optimization which is ...
+
+% BACKGROUND SECTION
+\section{Background}
+
+The details of the sten algo. Include some images. Give an example. 
+
+We used cycles gans to crack this algo. That etails: 
+
+Regular GANs. Include images and the math
+
+Cycle GANs. Explain it a little bit 
+
+Our implemention of cycle gans ultalizes pix2pix
+
+Explain what pix2pix is. Include images and rough outlay of the math 
+
+Pix2pix emplyed CNN. What they are and the math behind it. 
+
+CipherGANs. Explain it a little bit
+
+Autoencoders. Explain it a little bit 
+
+Baysian optimzation. Explain it a little but
+
+% METHODS SECTION
+\section{Methods}
+
+Math for the cycle gans
+
+Math behind the autoencoders 
+
+Math bethind the bayes opt
+
+Training CycleGAN: 
+    The training and testing data
+    How we actually flow through the network 
+    Bayes opt
+    
+Training Autoencoders:
+    The training and testing data
+    How we actually flow through the network
+    
+Testing protocols: 
+    Testing
+    
+Different training techniques:
+    Bit
+
+% RESULTS SECTION
+\section{Results}
+
+Here are the result for cycle gan: 
+     Grab images from the cycle gan algo
+
+Here are the results for autoencoder:
+     Grab images from the autoencoder section 
+     
+Here are the results for messing with different bit size:
+     Images from bit = 7, 6, 5, 4, 3
+
+Here are the results for cycle gan with bayes_opt:
+
+% DISCUSSION SECTION
+\section{Discussion}
+
+Summary of the introduction 
+
+If our model was successful. Why was it not successful. 
+
+Extra things that we can work on. 
+
+Our model presentes many fruitful avenues of research 
+
+% REFERENCES
+% THIS IS CREATED AUTOMATICALLY
+\bibliographystyle{IEEEtran}
+\bibliography{References} % change if another name is used for References file
+
+\end{document}
