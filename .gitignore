@@ -12,6 +12,8 @@ ukiyoe2photo/
 encodedArray/
 decodedArray/
 data/
+
+__pycache__/
 # IPython
 profile_default/
 ipython_config.py
