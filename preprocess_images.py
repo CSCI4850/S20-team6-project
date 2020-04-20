@@ -1,4 +1,3 @@
-#!/mnt/c/Users/nnibr/Miniconda3/envs/tf_gpu_mingo/python.exe
 # ---
 # jupyter:
 #   jupytext:
@@ -44,7 +43,8 @@ import pathlib
 #        decImg = st.decode("./encodedArray/{}.npy".format(name), "./decodedArray/{}.npy".format(name))
 #        done.append(name)
 #        i += 1
-for x in trange(7, 2, -1):
+#for x in trange(7, 2, -1):
+for x in trange(8,9):
     st = Sten(x)
     pathlib.Path("./encodedArray/bit_{0}".format(x)).mkdir(parents=True, exist_ok=True)
     pathlib.Path("./decodedArray/bit_{0}".format(x)).mkdir(parents=True, exist_ok=True)
