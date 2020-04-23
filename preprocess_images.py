@@ -23,7 +23,7 @@ import pathlib
 
 # NUM_FILES = int(sys.argv[1])
 
-#done = []
+# done = []
 
 # +
 #path = os.getcwd() + '/data/set1'
@@ -44,7 +44,7 @@ import pathlib
 #        done.append(name)
 #        i += 1
 #for x in trange(7, 2, -1):
-for x in trange(8,9):
+for x in trange(0, 9):
     st = Sten(x)
     pathlib.Path("./encodedArray/bit_{0}".format(x)).mkdir(parents=True, exist_ok=True)
     pathlib.Path("./decodedArray/bit_{0}".format(x)).mkdir(parents=True, exist_ok=True)
