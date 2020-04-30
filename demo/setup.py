@@ -1,4 +1,7 @@
-pip install Pillow==2.2.1
+pip install tensorflow-gpu==1.15
+pip install tensorflow-datasets
+pip install glob2 
+pip install Pillow
 pip install numpy
 pip install matplotlib
 pip install imageio
