@@ -36,11 +36,15 @@ These steps will set up everything needed to run the code in ```cycle_gan.ipynb`
 
 #### Installing Anaconda and Dependences
     
+</details>
+    
 <details>
 <summary>Getting Datasets</summary>
 <br>
 
 #### Getting Datasets
+    
+</details>
     
 <details>
 <summary>Training, Testing, and Saving</summary>
@@ -48,8 +52,12 @@ These steps will set up everything needed to run the code in ```cycle_gan.ipynb`
 
 #### Training and Testing
     
+</details>
+    
 <details>
 <summary>Tuning Hyper-parameters and Manipulating the Model</summary>
 <br>
 
 #### Tuning Hyper-parameters and Manipulating the Model
+    
+</details>
