@@ -24,7 +24,7 @@ The following scripts and ipynb notebook executed in this order will allow you t
 1. ```demo/setup.py```
 2. ```demo/get_data.py```
 3. ```demo/preprocess.py```
-4. ```cycle_gan.ipynb```
+4. ```demo/cycle_gan.ipynb```
 
 These steps will set up everything needed to run the code in ```cycle_gan.ipynb```.
 
