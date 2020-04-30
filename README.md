@@ -17,3 +17,13 @@ Our demo uses Jupyter Notebook, so the most basic steps needed to run our code i
 2. Open ```cycle_gan.ipynb```
 
 Below are more detailed instructions on how to work with our code including working with our packages, working with our datasets, manipulate our network, tuning hyper-parameters, and saving results. There is much more to be explored once you understand how to base CycleGAN algorithm works!
+
+### Quick Start Guide
+The following scripts and ipynb notebook executed in this order will allow you to install all the packages, install all the datasets, pre-process the data, and run the code (assuming you have Jupyter Notebook installed):
+
+1. ```demo/setup.py```
+2. ```demo/get_data.py```
+3. ```demo/preprocess.py```
+4. ```cycle_gan.ipynb```
+
+These steps will set up everything needed to run the code in ```cycle_gan.ipynb```.
