@@ -39,10 +39,10 @@ These steps will set up everything needed to run the code in ```cycle_gan.ipynb`
 </details>
     
 <details>
-<summary>Getting Datasets</summary>
+<summary>Getting Datasets and Pre-processing</summary>
 <br>
 
-#### Getting Datasets
+#### Getting Datasets and Pre-processing
     
 </details>
     
