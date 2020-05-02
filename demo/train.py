@@ -30,13 +30,13 @@ session = InteractiveSession(config=config)
 # ## Modify hyper-parameters
 
 # +
-SET_1_IMAGES = 10
-SET_2_IMAGES = 5
+SET_1_IMAGES = 100
+SET_2_IMAGES = 20
 STEN_X = int(sys.argv[1])
-CHECKPOINTS_FILE = "checkpoints/cycle_gan_train_{0}".format(STEN_X)
+CHECKPOINTS_FILE = "./checkpoints/cycle_gan_train_{0}".format(STEN_X)
 
-EPOCHS = 100
-STEPS_PER_EPOCH = 50
+EPOCHS = 10
+STEPS_PER_EPOCH = 5
 LAMBDA = 10
 
 
@@ -183,3 +183,4 @@ ckpt = tf.train.Checkpoint(generator_g=generator_g,
                            discriminator_x_optimizer=discriminator_x_optimizer,
                            discriminator_y_optimizer=discriminator_y_optimizer)
 ckpt_manager = tf.train.CheckpointManager(ckpt, CHECKPOINTS_FILE, max_to_keep=1)
+ckpt_manager.save()

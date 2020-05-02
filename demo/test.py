@@ -31,7 +31,7 @@ session = InteractiveSession(config=config)
 
 # +
 SET_1_IMAGE_START = 11
-SET_2_IMAGES_START = 6
+SET_2_IMAGE_START = 6
 
 STEN_X = int(sys.argv[1])
 CHECKPOINTS_FILE = "checkpoints/cycle_gan_train_{0}".format(STEN_X)
