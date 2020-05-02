@@ -77,4 +77,3 @@ The ```demo/test.py``` file assumes that you have trained in the bit size you ar
 #### Tuning Hyper-parameters and Manipulating the Model
     
 </details>
-```
