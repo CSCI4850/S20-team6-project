@@ -21,9 +21,9 @@ Below are more detailed instructions on how to work with our code including work
 ### Quick Start Guide
 The following scripts and ipynb notebook executed in this order will allow you to install all the packages, install all the datasets, pre-process the data, and run the code (assuming you have Jupyter Notebook installed):
 
-1. ```demo/setup.py```
+1. ```demo/setup```
 2. ```demo/get_data.py```
-3. ```demo/preprocess.py```
+3. ```demo/preprocess.py 10 5```
 4. ```demo/cycle_gan.ipynb```
 
 These steps will set up everything needed to run the code in ```cycle_gan.ipynb```.
@@ -50,7 +50,15 @@ These steps will set up everything needed to run the code in ```cycle_gan.ipynb`
 <summary>Training, Testing, and Saving</summary>
 <br>
 
-#### Training and Testing
+#### Training
+
+The code for training the CycleGAN model is found in ```demo/train.py```. The hyper-parameters, dataset, and saving mechanisms can be tweaked inside this file. 
+    
+To exceuate training run: 
+    
+```python3 demo/train.py [bit size]```
+    
+This command will run the code using the data from ```demo/get_data.py```, first 10 images from set 1 and 5 images from set 2 as training data from the specified bit size (0-8), and will save the results in results in ```demo/checkpoints/cycle_gan_train_[bit size]```.
     
 </details>
     
