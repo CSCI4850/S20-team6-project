@@ -17,10 +17,11 @@ import sys
 import numpy as np
 from sten import Sten
 import os.path
+from multiprocessing.pool import ThreadPool as Pool
 from tqdm.auto import tqdm, trange
 import pathlib
 
-
+pool_size = 9
 # NUM_FILES = int(sys.argv[1])
 
 # done = []
@@ -44,7 +45,8 @@ import pathlib
 #        done.append(name)
 #        i += 1
 #for x in trange(7, 2, -1):
-for x in trange(0, 9):
+
+def run(x):
     st = Sten(x)
     pathlib.Path("./encodedArray/bit_{0}".format(x)).mkdir(parents=True, exist_ok=True)
     pathlib.Path("./decodedArray/bit_{0}".format(x)).mkdir(parents=True, exist_ok=True)
@@ -53,3 +55,10 @@ for x in trange(0, 9):
             name = str(set1File) + '_' + str(set2File)
             encImg = st.encode("./data/set1/{}.jpg".format(set1File), "./data/set2/{}.jpg".format(set2File), "./encodedArray/bit_{0}/{1}.npy".format(x, name))
             decImg = st.decode("./encodedArray/bit_{0}/{1}.npy".format(x, name), "./decodedArray/bit_{0}/{1}.npy".format(x, name))
+
+pool = Pool(pool_size)
+for x in trange(0, 9):
+    pool.apply_async(run, (x,))
+
+pool.close()
+pool.join()
