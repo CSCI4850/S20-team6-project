@@ -1,15 +1,13 @@
-#!/bin/bash
-
 # Install python packages
-python3 -m pip install tensorflow-gpu==1.14.0
-python3 -m pip install tensorflow-datasets
-python3 -m pip install glob2 
-python3 -m pip install Pillow
-python3 -m pip install numpy
-python3 -m pip install matplotlib
-python3 -m pip install imageio
-python3 -m pip install tqdm
-python3 -m pip install pathlib
+conda install -c anaconda tensorflow-gpu==1.14.0
+conda install -c anaconda tensorflow-datasets
+conda install -c conda-forge glob2
+conda install -c anaconda pillow
+conda install -c anaconda numpy
+conda install -c conda-forge matplotlib
+conda install -c conda-forge imageio
+conda install -c conda-forge tqdm
+conda install -c menpo pathlib
 
 # Get the checkpoints
 if [ "$1" == "-c" ]; then
