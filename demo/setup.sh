@@ -1,4 +1,4 @@
-python3 -m pip install tensorflow-gpu==1.15
+python3 -m pip install tensorflow-gpu==1.14.0
 python3 -m pip install tensorflow-datasets
 python3 -m pip install glob2 
 python3 -m pip install Pillow
