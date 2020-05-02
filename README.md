@@ -55,7 +55,7 @@ These steps will set up everything needed to run the code in ```cycle_gan.ipynb`
 The code for training the CycleGAN model is found in ```demo/train.py```. The hyper-parameters, dataset, and saving mechanisms can be tweaked inside this file. 
     
 To exceuate training run: 
-    
+
 ```python3 demo/train.py [bit size]```
     
 This command will run the code using the data from ```demo/get_data.py```, first 10 images from set 1 and first 5 images from set 2 as training data from the specified bit size (0-8), and will save the results in results in ```demo/checkpoints/cycle_gan_train_[bit size]```. All of these can be changed in the ```demo/train.py``` file.
@@ -66,7 +66,7 @@ After training is done, you can run:
     
 ```python3 demo/test.py [bit size]```
     
-The ```demo/test.py``` file assumes that you have trained in the bit size you are testing and the checkpoints have been saved in ```demo/checkpoints/cycle_gan_train_[bit size]```. The test file will generate an image, ```test.png``` that shows the results of the algorithm. The location of the checkpoints and the name of the file can be modified in '''demo/test.py```.
+The ```demo/test.py``` file assumes that you have trained in the bit size you are testing and the checkpoints have been saved in ```demo/checkpoints/cycle_gan_train_[bit size]```. The test file will generate an image, ```test.png``` that shows the results of the algorithm. The location of the checkpoints and the name of the file can be modified in ```demo/test.py```.
     
 </details>
     
@@ -77,3 +77,4 @@ The ```demo/test.py``` file assumes that you have trained in the bit size you ar
 #### Tuning Hyper-parameters and Manipulating the Model
     
 </details>
+```
