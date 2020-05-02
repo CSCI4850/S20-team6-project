@@ -23,7 +23,7 @@ The following scripts and ipynb notebook executed in this order will allow you t
 
 1. ```demo/setup```
 2. ```demo/get_data.py```
-3. ```demo/preprocess.py 10 5```
+3. ```demo/preprocess.py 15 10```
 4. ```demo/cycle_gan.ipynb```
 
 These steps will set up everything needed to run the code in ```cycle_gan.ipynb```.
@@ -50,7 +50,7 @@ These steps will set up everything needed to run the code in ```cycle_gan.ipynb`
 <summary>Training, Testing, and Saving</summary>
 <br>
 
-#### Training
+#### Training and Saving
 
 The code for training the CycleGAN model is found in ```demo/train.py```. The hyper-parameters, dataset, and saving mechanisms can be tweaked inside this file. 
     
@@ -77,3 +77,4 @@ The ```demo/test.py``` file assumes that you have trained in the bit size you ar
 #### Tuning Hyper-parameters and Manipulating the Model
     
 </details>
+```
