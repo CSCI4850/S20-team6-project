@@ -47,7 +47,7 @@ These steps will set up everything needed to run the code in ```cycle_gan.ipynb`
 </details>
     
 <details>
-<summary>Training, Testing, and Saving</summary>
+<summary>Training, Testing, Saving, and Manipulating the Model</summary>
 <br>
 
 #### Training and Saving
@@ -71,9 +71,19 @@ The ```demo/test.py``` file assumes that you have trained in the bit size you ar
 </details>
     
 <details>
-<summary>Tuning Hyper-parameters and Manipulating the Model</summary>
+<summary>Tuning Hyper-parameters</summary>
 <br>
 
-#### Tuning Hyper-parameters and Manipulating the Model
+#### Tuning Hyper-parameters 
+
+To tune our hyper-parameters we used Bayesian Optimization. It tunes the hyper-parameters to get the best results for model performance.
+
+The code for training the model using bayesian optimization can be found in ```demo/cycle_gan_bayes.py```. 
+  
+To execute Bayesian Optimization run: 
+
+```python3 demo/cycle_gan_bayes.py [bit size] ```
+
+The command will run the cycle gan model using bayesian optimization, for each iteration it will store the hyperparameters and the performance in ```demo/logs[bit size].json``` file.
     
 </details>
