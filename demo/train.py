@@ -30,8 +30,8 @@ session = InteractiveSession(config=config)
 # ## Modify hyper-parameters
 
 # +
-SET_1_IMAGES = 100
-SET_2_IMAGES = 20
+SET_1_IMAGES = 10
+SET_2_IMAGES = 5
 STEN_X = int(sys.argv[1])
 CHECKPOINTS_FILE = "./checkpoints/cycle_gan_train_{0}".format(STEN_X)
 
