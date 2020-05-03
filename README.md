@@ -87,4 +87,3 @@ To execute Bayesian Optimization run:
 The command will run the cycle gan model using bayesian optimization, for each iteration it will store the hyperparameters and the performance in ```demo/logs[bit size].json``` file. The search space of Bayesian Optimization can be changed in the file. 
     
 </details>
-```
