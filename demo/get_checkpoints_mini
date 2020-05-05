@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export fileid=1uFhq2bckkEd4XfgUY3H-Q4qkHQQxl56N
+export fileid=17kz2lVHgj0nYR-8hQoEeoU7mHWvoS-eY
 export filename=checkpoints.zip
 wget --save-cookies cookies.txt 'https://docs.google.com/uc?export=download&id='$fileid -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1/p' > confirm.txt
 wget --load-cookies cookies.txt -O $filename 'https://docs.google.com/uc?export=download&id='$fileid'&confirm='$(<confirm.txt)

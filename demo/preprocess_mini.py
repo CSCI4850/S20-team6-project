@@ -21,29 +21,21 @@ import numpy as np
 
 from sten import Sten
 from tqdm.auto import tqdm, trange
-from multiprocessing.pool import ThreadPool as Pool
 
 
 # -
 
 
-def create(x):
-    set1File = x+11
-    set2File = x+6
-    name = str(set1File) + '_' + str(set2File)
-    encImg = st.encode("./data/set1/{}.jpg".format(set1File), "./data/set2/{}.jpg".format(set2File), "./encodedArray/bit_{0}/{1}.npy".format(x, name))
-    decImg = st.decode("./encodedArray/bit_{0}/{1}.npy".format(x, name), "./decodedArray/bit_{0}/{1}.npy".format(x, name))
+def run():
+    for x in trange(5):
+        set1File = x+11
+        set2File = x+6
+        name = str(set1File) + '_' + str(set2File)
+        encImg = st.encode("./data/set1/{0}.jpg".format(set1File), "./data/set2/{0}.jpg".format(set2File), "./encodedArray/bit_7/{0}.npy".format(name))
+        decImg = st.decode("./encodedArray/bit_7/{0}.npy".format(name), "./decodedArray/bit_7/{0}.npy".format(name))
 
-
-pool_size = 5
-
-pool = Pool(pool_size)
 
 pathlib.Path("./encodedArray/bit_7").mkdir(parents=True, exist_ok=True)
 pathlib.Path("./decodedArray/bit_7").mkdir(parents=True, exist_ok=True)
 st = Sten(7)
-for x in trange(5):
-    pool.apply_async(create, (x,))
-
-pool.close()
-pool.join()
+run()
