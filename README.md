@@ -70,24 +70,18 @@ These steps will set up everything needed to run the code in ```cycle_gan.ipynb`
 <summary>Getting Datasets and Pre-processing</summary>
 <br>
 
-#### Training and Saving
+#### Getting Datasets
 
-The code for training the CycleGAN model is found in ```demo/train.py```. The hyper-parameters, dataset, and saving mechanisms can be tweaked inside this file. 
-    
-To exceuate training run: 
+Our script ```demo/get_data``` will grab data from the University of Berkeley Cycle Generative Networks datasets ```https://people.eecs.berkeley.edu/~taesung_park/CycleGAN/datasets/```.
 
-```python3 demo/train.py [bit size]```
-    
-This command will run the code using the data from ```demo/get_data.py```, first 10 images from set 1 and first 5 images from set 2 as training data from the specified bit size (0-8), and will save the results in results in ```demo/checkpoints/cycle_gan_train_[bit size]```. All of these can be changed in the ```demo/train.py``` file.
-    
-#### Testing
-    
-After training is done, you can run: 
-    
-```python3 demo/test.py [bit size]```
-    
-The ```demo/test.py``` file assumes that you have trained in the bit size you are testing and the checkpoints have been saved in ```demo/checkpoints/cycle_gan_train_[bit size]```. The test file will generate an image, ```test.png``` that shows the results of the algorithm. The location of the checkpoints and the name of the file can be modified in ```demo/test.py```.
-    
+With the data as a zip file, the script will:
+
+1. Unzip the file
+2. Create four directories titled set1, set2, decodedArray, and encodedArray
+3. Moves the files in the unzipped directory to the appropriate locations
+
+To get a different dataset, replace the URL with the desired link in the ```demo/get_data``` script.
+
 #### Pre-processing
     
 </details>
