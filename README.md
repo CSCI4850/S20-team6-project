@@ -35,6 +35,34 @@ These steps will set up everything needed to run the code in ```cycle_gan.ipynb`
 <br>
 
 #### Installing Anaconda and Dependences
+1. To install Anaconda on a *Windows* machine, download the installer here: 
+   https://www.anaconda.com/products/individual#windows
+
+~ OR ~
+
+   To install Anaconda on a *Mac* machine, download the graphical installer here:   
+   https://www.anaconda.com/products/individual#macos
+
+2. After Anaconda is installed, initialize the Conda enviornment by executing this line in a command prompt:
+```conda init```
+
+3. Then, create a new enviornment, configured to Python 3, for this project:
+```conda create -n cyclegan python=3```
+
+4. Activate your newly created enviornment:
+```conda activate cyclegan```
+
+5. Install necessary scripts by running ```demo/setup```. Alternatively, run these install commands individually in your command line:
+    - ```conda install -c anaconda tensorflow-gpu==1.14.0 -y```
+    - ```conda install -c anaconda tensorflow-datasets -y```
+    - ```conda install -c conda-forge glob2 -y```
+    - ```conda install -c anaconda pillow -y```
+    - ```conda install -c anaconda numpy -y```
+    - ```conda install -c conda-forge matplotlib -y```
+    - ```conda install -c conda-forge imageio -y```
+    - ```conda install -c conda-forge tqdm -y```
+    - ```conda install -c menpo pathlib -y```
+
     
 </details>
     
@@ -42,19 +70,7 @@ These steps will set up everything needed to run the code in ```cycle_gan.ipynb`
 <summary>Getting Datasets and Pre-processing</summary>
 <br>
 
-#### Getting Datasets
-    
-Our script ```demo/get_data``` will grab data from the University of Berkeley Cycle Generative Networks datasets ```https://people.eecs.berkeley.edu/~taesung_park/CycleGAN/datasets/```.
-    
-With the data as a zip file, the script will:
-
-1. Unzip the file
-2. Create four directories titled set1, set2, decodedArray, and encodedArray
-3. Moves the files in the unzipped directory to the appropriate locations
-    
-To get a different dataset, replace the URL with the desired link in the ```demo/get_data``` script.
-
-#### Pre-processing
+#### Getting Datasets and Pre-processing
     
 </details>
     
