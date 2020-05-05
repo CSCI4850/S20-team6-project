@@ -44,8 +44,15 @@ These steps will set up everything needed to run the code in ```cycle_gan.ipynb`
 
 #### Getting Datasets and Pre-processing
     
-</details>
+    To grab data for this project, perform the following command using the get_data.sh file:
     
+    ```./get_data```
+    
+    This bash executable will gather data from a URL and unzip the files. It will create four directories titled set1, set2, decodedArray, and encodedArray. In these directories it will dynamically name each file based on the count and then continue to the next directoy. To gather different data, simply change the URL located at the top line of the get_data.sh file to the desired destination.
+    
+    Our preprocess.py file will take a file from set1 and set2 and then encode it. It will be named dynamically and stored in our encodedArray directory created earlier in get_data.sh. The program will then take the encodedArray file, create a decoded version, and place it inside the decodedArray directory.
+
+</details>
 <details>
 <summary>Training, Testing, Saving, and Manipulating the Model</summary>
 <br>
