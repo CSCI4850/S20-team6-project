@@ -84,6 +84,12 @@ To get a different dataset, replace the URL with the desired link in the ```demo
 
 #### Pre-processing
     
+Pre-processing in our case is taking the images from the ```demo/get_data``` script and passing them through the ```demo/sten.py``` to generate the encoded and decoded images. 
+    
+Calling the scripts as ```demo/preprocess.py 15 10``` will create all encoded and decoded images from all permutations of 15 of the first files from set1 and 10 of the first files from set2. Furthermore, it will create images for all bit sizes. 
+    
+The script ```demo/preprocess.py``` runs in parallel and can be modified to run on a single thread.
+    
 </details>
     
 <details>
