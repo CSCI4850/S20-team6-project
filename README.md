@@ -69,7 +69,7 @@ If you just want to see just the results of our experiments, follow these steps:
     - ```conda install -c menpo pathlib -y```
     
 6. The notebook also requires TensorFlow example:
-```pip install -q git+https://github.com/tensorflow/examples.git```    
+    - ```pip install -q git+https://github.com/tensorflow/examples.git```    
 
 </details>
 
