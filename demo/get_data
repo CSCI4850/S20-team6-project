@@ -1,9 +1,10 @@
 #!/bin/sh
-wget https://people.eecs.berkeley.edu/~taesung_park/CycleGAN/datasets/summer2winter_yosemite.zip
-unzip summer2winter_yosemite.zip
-rm -rf summer2winter_yosemite.zip
-mv summer2winter_yosemite data
+wget -O data.zip $1
+unzip data.zip -d data
 cd data
+mv * data
+mv data/* .
+rm -rf data
 mv testA/* trainA/
 rm -rf testA
 mv testB/* trainB/
@@ -17,3 +18,4 @@ ls -v | cat -n | while read n f; do mv -n "$f" "$n.jpg"; done
 cd ../..
 mkdir decodedArray
 mkdir encodedArray
+rm -rf data.zip
