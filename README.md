@@ -21,7 +21,7 @@ Below are more detailed instructions on how to work with our code including work
 ### Quick Start Guide
 The following scripts and ipynb notebook executed in this order will allow you to install all the packages, install all the datasets, pre-process the data, and run the code (assuming you have Jupyter Notebook installed):
 
-1. ```demo/setup```
+1. ```demo/setup -c```
 2. ```demo/get_data.py```
 3. ```demo/preprocess.py 15 10```
 4. ```demo/cycle_gan.ipynb```
@@ -62,8 +62,26 @@ These steps will set up everything needed to run the code in ```cycle_gan.ipynb`
     - ```conda install -c conda-forge imageio -y```
     - ```conda install -c conda-forge tqdm -y```
     - ```conda install -c menpo pathlib -y```
+</details>
 
+<details>
+<summary>Getting Checkpoints</summary>
+<br>
+
+#### Getting Checkpoints
     
+We provide two ways of getting the pre-trained weights for our model. You can run the ```demo/set_up``` script with the ```-c``` flag or you can get them manually.
+    
+The steps for manual install are:
+
+1. ```export fileid=1L0sh5pYQbsxFpDRRcTJ5FprBk5CemDc9```
+2. ```export filename=checkpoints.zip```
+3. ```wget --save-cookies cookies.txt 'https://docs.google.com/uc?export=download&id='$fileid -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1/p' > confirm.txt```
+4. ```wget --load-cookies cookies.txt -O $filename 'https://docs.google.com/uc?export=download&id='$fileid'&confirm='$(<confirm.txt)```
+5. ```rm -f confirm.txt cookies.txt```
+6. ```unzip checkpoints.zip```                                                                                   
+7. ```rm checkpoints.zip```
+                                                                                                                                        
 </details>
     
 <details>
