@@ -37,8 +37,8 @@ These steps will set up everything needed to run the code in ```cycle_gan.ipynb`
 #### Installing Anaconda and Dependences
 1. To install Anaconda on a *Windows* machine, download the installer here: 
    https://www.anaconda.com/products/individual#windows
-
-~ OR ~
+    
+   Or
 
    To install Anaconda on a *Mac* machine, download the graphical installer here:   
    https://www.anaconda.com/products/individual#macos
