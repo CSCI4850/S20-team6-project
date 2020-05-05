@@ -26,7 +26,12 @@ The following scripts and ipynb notebook executed in this order will allow you t
 3. ```demo/preprocess.py 15 10```
 4. ```demo/cycle_gan.ipynb```
 
-These steps will set up everything needed to run the code in ```cycle_gan.ipynb```.
+These steps will set up everything needed to run the code in ```cycle_gan.ipynb``` for training and testing.
+
+If you just want to see just the results of our experiments, follow these steps:
+
+1. Run ```demo/setup```
+2. Open ```demo/demo.ipynb```
 
 ### Detailed Steps
 
