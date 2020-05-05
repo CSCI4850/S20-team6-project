@@ -84,7 +84,9 @@ We provide two ways of getting the pre-trained weights for our model. You can ru
 The steps for manual install are:
 
 1. ```export fileid=1L0sh5pYQbsxFpDRRcTJ5FprBk5CemDc9``` -- for all checkpoints (10 GB)
+    
    Or 
+    
    ```export fileid=17kz2lVHgj0nYR-8hQoEeoU7mHWvoS-eY``` -- for the checkpoints needed to ```demo/demo.ipynb``` (2 GB)
 2. ```export filename=checkpoints.zip```
 3. ```wget --save-cookies cookies.txt 'https://docs.google.com/uc?export=download&id='$fileid -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1/p' > confirm.txt```
