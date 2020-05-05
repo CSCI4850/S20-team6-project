@@ -8,6 +8,7 @@ conda install -c conda-forge matplotlib -y
 conda install -c conda-forge imageio -y
 conda install -c conda-forge tqdm -y
 conda install -c menpo pathlib -y
+pip install -q git+https://github.com/tensorflow/examples.git
 
 # Get the checkpoints
 if [ "$1" == "-c" ]; then
