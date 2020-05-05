@@ -42,7 +42,19 @@ These steps will set up everything needed to run the code in ```cycle_gan.ipynb`
 <summary>Getting Datasets and Pre-processing</summary>
 <br>
 
-#### Getting Datasets and Pre-processing
+#### Getting Datasets
+    
+Our script ```demo/get_data``` will grab data from the University of Berkeley Cycle Generative Networks datasets ```https://people.eecs.berkeley.edu/~taesung_park/CycleGAN/datasets/```.
+    
+With the data as a zip file, the script will:
+
+1. Unzip the file
+2. Create four directories titled set1, set2, decodedArray, and encodedArray
+3. Moves the files in the unzipped directory to the appropriate locations
+    
+To get a different dataset, replace the URL with the desired link in the ```demo/get_data``` script.
+
+#### Pre-processing
     
 </details>
     
