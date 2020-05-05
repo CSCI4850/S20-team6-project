@@ -65,10 +65,10 @@ These steps will set up everything needed to run the code in ```cycle_gan.ipynb`
 </details>
 
 <details>
-<summary>Getting Checkpoints</summary>
+<summary>Downloading Pre-trained Weights</summary>
 <br>
 
-#### Getting Checkpoints
+#### Downloading Pre-trained Weights
     
 We provide two ways of getting the pre-trained weights for our model. You can run the ```demo/set_up``` script with the ```-c``` flag or you can get them manually.
     
