@@ -18,4 +18,5 @@ ls -v | cat -n | while read n f; do mv -n "$f" "$n.jpg"; done
 cd ../..
 mkdir decodedArray
 mkdir encodedArray
+mkdir results
 rm -rf data.zip

@@ -9,12 +9,12 @@
 ## Demo (With Python 3)
 For as long as humans have participated in the act of communication, concealing information in those communicative mediums or concealing any traces of communication has manifested into an art of its own. An important technique used to conceal any traces of communication called steganography has been used in many domains including government level communication and encoding harmful media in innocuous media such as in phishing emails. Our work aims to crack a popular steganography algorithm and running our code will highlight exactly how to do that. 
 
-We will have one demo file, ```cycle_gan.ipynb``` to demonstrate quick and simple examples of our results. The notebook will highlight the capabilities of our Cycle Generative Adversarial Networks (CycleGANs) algorithm to crack the Least Significant Bit (LSB) Steganography technique.
+We will have one demo file, ```demo/demo.ipynb``` to demonstrate quick and simple examples of our results. The notebook will highlight the capabilities of our Cycle Generative Adversarial Networks (CycleGANs) algorithm to crack the Least Significant Bit (LSB) Steganography technique.
 
 Our demo uses Jupyter Notebook, so the most basic steps needed to run our code is:
 
 1. Install Jupyter Notebook (https://jupyter.org/install)
-2. Open ```cycle_gan.ipynb```
+2. Open ```demo/demo.ipynb```
 
 Below are more detailed instructions on how to work with our code including working with our packages, working with our datasets, manipulate our network, tuning hyper-parameters, and saving results. There is much more to be explored once you understand how to base CycleGAN algorithm works!
 
@@ -22,16 +22,16 @@ Below are more detailed instructions on how to work with our code including work
 The following scripts and ipynb notebook executed in this order will allow you to install all the packages, install all the datasets, pre-process the data, and run the code (assuming you have Jupyter Notebook installed):
 
 1. ```demo/setup -c```
-2. ```demo/get_data.py```
+2. ```demo/get_data```
 3. ```demo/preprocess.py 15 10```
-4. ```demo/cycle_gan.ipynb```
+4. ```demo/demo.ipynb```
 
-These steps will set up everything needed to run the code in ```cycle_gan.ipynb``` for training and testing.
+These steps will set up everything needed to run the code in ```demo/demo.ipynb``` for training and testing.
 
 If you just want to see just the results of our experiments, follow these steps:
 
-1. Run ```demo/setup```
-2. Open ```demo/demo.ipynb```
+1. ```demo/setup```
+2. ```demo/demo.ipynb```
 
 ### Detailed Steps
 
@@ -67,6 +67,10 @@ If you just want to see just the results of our experiments, follow these steps:
     - ```conda install -c conda-forge imageio -y```
     - ```conda install -c conda-forge tqdm -y```
     - ```conda install -c menpo pathlib -y```
+    
+6. The notebook also requires TensorFlow example:
+```pip install -q git+https://github.com/tensorflow/examples.git```    
+
 </details>
 
 <details>
@@ -79,7 +83,9 @@ We provide two ways of getting the pre-trained weights for our model. You can ru
     
 The steps for manual install are:
 
-1. ```export fileid=1L0sh5pYQbsxFpDRRcTJ5FprBk5CemDc9```
+1. ```export fileid=1L0sh5pYQbsxFpDRRcTJ5FprBk5CemDc9``` -- for all checkpoints (10 GB)
+   Or 
+   ```export fileid=17kz2lVHgj0nYR-8hQoEeoU7mHWvoS-eY``` -- for the checkpoints needed to ```demo/demo.ipynb``` (3 GB)
 2. ```export filename=checkpoints.zip```
 3. ```wget --save-cookies cookies.txt 'https://docs.google.com/uc?export=download&id='$fileid -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1/p' > confirm.txt```
 4. ```wget --load-cookies cookies.txt -O $filename 'https://docs.google.com/uc?export=download&id='$fileid'&confirm='$(<confirm.txt)```
