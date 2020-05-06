@@ -11,6 +11,10 @@ For as long as humans have participated in the act of communication, concealing 
 
 We will have one demo file, ```demo/demo.ipynb``` to demonstrate quick and simple examples of our results. The notebook will highlight the capabilities of our Cycle Generative Adversarial Networks (CycleGANs) algorithm to crack the Least Significant Bit (LSB) Steganography technique.
 
+Running the demo will show the effectiveness of our CycleGAN algorithm as shown here:
+
+![Alt text](demo/results/cycle_gan_7.png?raw=true "Results of CycleGAN")
+
 Our demo uses Jupyter Notebook, so the most basic steps needed to run our code is:
 
 1. Install Jupyter Notebook (https://jupyter.org/install)
