@@ -1,4 +1,4 @@
-# Team LSTM
+# Team LSTM (https://youtu.be/Zk5nWCd9CI0)
 ### Members
 1. George Boktor 
 2. Nibraas Khan
